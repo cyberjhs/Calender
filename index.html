@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Calender</title>
+    <script src="./script.js" defer></script>
+    <style id="css"></style>
+</head>
+<body>
+    <div class="calender">
+        <div class="calenderBorder">
+        <div class="headerSelector">
+            <select id="month" onchange="getMonthYear()">
+                <option value="0" disabled selected>Select Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">March</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sept</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select>
+            <select id="year" onchange="getMonthYear()">
+                <option value="0" disabled selected>Select Year</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+            </select>
+        </div>
+        <div class="mainSec">
+            <div class="weeks">
+                <span>Sun</span>
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thus</span>
+                <span>Fri</span>
+                <span>Sat</span>
+            </div>
+            <div id="date">
+                
+            </div>
+        </div>
+        <div class="inputDate">
+            <input type="text" onchange="togleTheme()" placeholder="Enter Any Date" id="inputText"/><span onclick="togleTheme()">Enter</span>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

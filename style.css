@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+.calender{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calenderBorder{
+    width: fit-content;
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+select{
+    width: 250px;
+    height: 67px;
+    font-size: 1.3rem;
+    padding: 0 2rem;
+    font-weight: bold;
+    border: 2px solid;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='50' viewBox='0 0 24 24' width='74' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+.headerSelector{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.weeks{
+    width: 100%;
+    display: flex;
+}
+#date{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.weeks>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 114.2px;
+    margin: auto 0;
+    height: 70px;
+    border: 2px solid;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.days{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 114.2px;
+    margin: auto 0;
+    height: 60px;
+    border: 2px solid black;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.mainSec{
+    width: 800px;
+}
+.inputDate{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.inputDate>input{
+    width: 200px;
+    height: 50px;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+}
+.inputDate span{
+    background-color: #4471C4;
+    width: 100px;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media only screen and (max-width: 480px){
+    .calenderBorder{
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0 3rem;
+    }
+    .mainSec,.headerSelector,.inputDate{
+        width: 700px;
+    }
+    .weeks>span{
+        width: 99px;
+    }
+    .days{
+        width: 99px;
+    }
+}
